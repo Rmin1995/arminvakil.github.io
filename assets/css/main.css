@@ -1350,6 +1350,10 @@ ul.icons {
   ul.icons li {
     display: inline-block;
     padding: 0 1em 0 0; }
+    ul.icons li a {
+    	color:black;
+    	text-decoration: none;
+    }
     ul.icons li:last-child {
       padding-right: 0; }
     ul.icons li .icon {
@@ -1861,6 +1865,9 @@ button,
     padding: 0 6em 0.1em 6em ;
     margin: 0 auto;
     max-width: 110em; }
+    #main > .inner > .header {
+    height:100;
+    }
     #main > .inner > section {
       padding: 6em 0 4em 0 ;
       border-top: solid 2px rgba(210, 215, 217, 0.75); }
