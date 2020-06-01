@@ -1,0 +1,482 @@
+\documentclass[a4paper,9pt,oneside]{article}
+\usepackage{fontawesome}
+\newcommand{\TypesetInNonStopMode}{1}
+\newcommand{\TypesetInDraftMode}{0}
+
+\input{CV-Preamble.tex}
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Seyed Armin Vakil Ghahani}
+\newcommand{\CVTitle}{Armin's CV}
+\newcommand{\CVNote}{CV compiled on {\today}}
+%\newcommand{\CVWebpage}{}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+%pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks
+}
+% Shorthand.
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{\CVAuthor}
+\begin{subtitle}
+
+\faInstitution Computer Science \& Engineering Department, University Park, PA 16802
+\par
+\Large{
+\href{https://arminvakil.github.io/}{\faGlobe}
+\href{mailto:arminvakil@psu.edu}{\faEnvelope}
+\href{https://www.linkedin.com/in/arminvakil}{\faLinkedinSquare}
+\href{https://github.com/arminvakil}{\faGithubSquare}
+\href{https://scholar.google.com/citations?user=OHnTCysAAAAJ&hl=en}{\faGraduationCap}}
+%\,\SubBulletSymbol\,
+%+98\,912\,819-2881
+\
+\end{subtitle}
+
+\begin{body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section
+{Education}
+{Education}
+{PDF:Education}
+
+\textbf{Pennsylvania State University},
+University Park, PA
+\hfill
+\DatestampYMD{2018}{08}{20} --
+Now
+\GapNoBreak
+\BulletItem
+Ph.D. Student in
+Computer Science \& Engineering Department
+\SubBulletItem
+Advisor: Prof. Mahmut Taylan Kandemir
+\SubBulletItem
+GPA: 4/4
+\SubBulletItem
+\textbf{Relevant Graduate Courses}: Computer Architecture, Data Structures \& Algorithms, Binary-level Analysis, Language-based Security, Operating Systems, Emerging Technologies, Compiler Construction
+
+\BigGap
+
+\textbf{Sharif University Of Technology},
+Tehran, Iran
+\hfill
+\DatestampYMD{2013}{09}{21} --
+\DatestampYMD{2018}{07}{07}
+
+\GapNoBreak
+\BulletItem
+Bachelor of Science (B.S.) in
+Computer Engineering - Hardware
+\SubBulletItem
+Thesis: Cache Replacement Policy Based on Expected Hit Count
+\newline
+Advisor: Prof. Hamid Sarbazi-Azad
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%% ACADEMIC AWARDS %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Research Interests}
+{Research Interests}
+{PDF:ResearchInterests}
+
+\BulletItem
+Computer Architecture
+\BulletItem
+Memory Systems
+\BulletItem
+Virtual Memory
+\BulletItem
+Virtualized Systems
+\BulletItem
+Persistent Memory
+
+\section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+\BulletItem
+\textbf{Armin Vakil},
+Mahmut Taylan Kandemir,
+Jagadish Kotra
+``DSM: A Case for Hardware-Assisted Merging of DRAM Rows with Same Content", \textit{In Proceedings of the ACM on Measurement and Analysis of Computing Systems}, \textbf{(SIGMETRICS 2020)}
+
+\BulletItem
+Mohammad Bakhshalipour,
+Aydin Faraji,
+\textbf{Armin Vakil},
+Farid Samandi,
+Pejman Lotfi-Kamran,
+Hamid Sarbazi-Azad
+``Reducing Writebacks Through In-Cache Displacement", \textit{ACM Transactions on Design Automation of Electronic Systems}, \textbf{(TODAES 2019)}
+
+\BulletItem
+\textbf{Armin Vakil},
+Sara Mahdizadeh Shahri,
+Mohammad Bakhshalipour,
+Pejman Lotfi-Kamran,
+Hamid Sarbazi-Azad
+``Making Belady-Inspired Replacement Policies More Effective Using Expected Hit Count." \textit{arXiv preprint}, \textbf{(arXiv 2018)}
+
+
+\BulletItem
+\textbf{Armin Vakil},
+Sara Mahdizadeh Shahri,
+Mohammad-Reza Lotfi-Namin,
+Mohammad Bakhshalipour,
+Pejman Lotfi-Kamran,
+Hamid Sarbazi-Azad,
+``Cache Replacement Policy Based on Expected Hit Count", \textit{IEEE Computer Architecture Letters}, \textbf{(CAL 2017)}
+
+
+
+\section
+{Work\newline
+Experience}
+{Work Experience}
+{PDF:WorkExperience}
+
+\BulletItem {Software Developer,
+\textbf{I-Cliqq}
+\hfill
+\DatestampYMD{2018}{1}{1} --
+\DatestampYMD{2018}{08}{14}}
+
+\GapNoBreak
+\SubBulletItem
+Designing Embroidery Software
+
+
+\BulletItem {Software Developer,
+\textbf{Viratech Sharif},
+Tehran, Iran
+\hfill
+\DatestampYMD{2015}{9}{15} --
+\DatestampYMD{2016}{9}{15} }
+
+\GapNoBreak
+\SubBulletItem
+Traffic Simulator (C++) - Network Simulator
+\SubBulletItem
+Add tunneling protocol between link, internet, and transport layer
+
+\section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\BulletItem{\textbf{Pennsylvania State University}
+\newline
+$\diamond$
+\textbf{DRAM Memory} -
+DRAM memories need refresh operations because they lose their content/charge over time. The overhead of these refreshes increases with
+larger DRAM memories. My research in this area reduces the memory refresh overhead in virtualized systems by leveraging the same-content values in DRAM.
+\newline
+$\diamond$
+\textbf{Virtual Memory} -
+Huge pages reduce the virtual-to-physical address translation by reducing the pressure on TLB and increasing the TLB reach.
+However, allocating huge pages in presense of memory fragmentation has high overheads and I try to address this problem in my research.
+\newline
+$\diamond$
+\textbf{Persistent Memory} -
+Exploring persistent memory programming challenges and opportunities.
+}
+\newline
+\BulletItem{\textbf{Sharif University of Technology}
+\newline
+$\diamond$
+\textbf{Cache Replacement Policies} -
+My B.Sc. thesis project is on predicting the correlation of reuse-distance between cache blocks and remaining hit count of each cache block. In our research, we proposed a cache replacement policy that leverages the correlation between reuse-distance and the remaining hit count.
+}
+
+
+\section
+{Teaching Experience}
+{Teaching Experience}
+{PDF:TeachingExperience}
+
+
+\BulletItem {Teaching Assistant at Pennsylvania State University}
+
+\SubBulletItem {Introduction to Computer Architecture (CMPEN 431) \hfill{Spring 2020}}
+\SubBulletItem {Computer Organization and Design (CMPEN 331) \hfill{Fall 2018, 2019, Spring 2019}}
+
+\BulletItem Teaching Assistant at Sharif University of Technology
+\SubBulletItem {Computer Architecture
+\hfill
+Fall 2016, 2017}
+\SubBulletItem {Digital System Design \hfill {Spring \& Fall 2017}}
+
+\SubBulletItem {Digital Design \hfill{Spring 2017}}
+\SubBulletItem {Advanced Logic Design \hfill{Fall 2016}}
+\SubBulletItem {Discrete Structures \hfill {Spring 2016}}
+\SubBulletItem {Advanced Programming \hfill{Fall 2014, 2015}}
+\SubBulletItem {Fundamental Of Programming \hfill{Spring \& Fall 2014}}
+
+
+\BulletItem{High School Teacher
+\hfill
+\DatestampY{2013} --
+\DatestampY{2018}
+\SubBulletItem {Teaching Combinatorics, Graph Theory, Algorithm, and C++ Programming}
+}
+
+\section
+{Presentations}
+{Presentations}
+{PDF:Presentations}
+
+\BulletItem {DSM: A Case for Hardware-Assisted Merging of DRAM Rows with Same Content}
+\SubBulletItem {ACM SIGMETRICS \hfill{June 2020}}
+
+\section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\BulletItem
+Programming Languages:
+C/C++,
+Python,
+Verilog,
+R,
+Shell,
+Assembly
+
+\BulletItem
+Simulators:
+gem5,
+BadgerTrap,
+DRAMsim2,
+BigHouse,
+Ramulator,
+CACTI,
+SimpleSSD,
+ChampSim
+
+\BulletItem
+Tools \& Frameworks:
+Qemu,
+Pin,
+DynamoRIO,
+LLVM,
+Google Protobuf,
+gRPC,
+Qt
+
+\BulletItem
+Operating Systems:
+Ubuntu(Native),
+Windows
+
+\BulletItem
+Type Setting:
+{\LaTeX},
+Microsoft Office
+
+
+
+\section
+{Honors\newline
+And\newline
+Awards}
+{Honors\newline
+And\newline
+Awards}
+{PDF:HonorsAndAwards}
+
+\BulletItem
+Qualified for 2nd Cache Replacement Championship (CRC-2)
+\SubBulletItem
+Cache Replacement Policy Based on Expected Hit Count
+\hfill
+\DatestampYM{2017}{06}
+
+\BulletItem
+Undergraduate grant from the Iranian National Elites Foundation
+\hfill
+\DatestampYM{2012}{09} -- \DatestampYM{2015}{01}
+
+\BulletItem
+\textbf{Silver Medal} in 22nd Iran National Olympiad in Informatics(INOI)
+\hfill
+\DatestampYM{2012}{09}
+
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Community Service}
+{Community Service}
+{PDF:CommunityService}
+
+\BulletItem
+\href{https://github.com/SharifAIChallenge}{
+\textbf{Sharif AI Challenge}} (Contest Organizer)
+\hfill
+\DatestampYM{2015}{1} --
+\DatestampYM{2017}{1}
+
+\SubBulletItem
+Undergraduate Programming Contest
+\SubBulletItem
+C++ Client
+
+\BulletItem
+\textbf{1st Gateuino Contest} (Contest Organizer)
+\hfill
+\DatestampYM{2016}{5}
+
+\SubBulletItem
+Founded a new hardware contest for undergraduate freshman and sophomore
+
+\section
+{Course Projects}
+{Course Projects}
+{PDF:CourseProjects}
+
+\BulletItem
+\href{https://github.com/arminvakil/PFS}
+{\textbf{Parallel Distributed File System}}
+\hfill
+\DatestampYM{2019}{12}
+\SubBulletItem
+Based on gRPC and Google Protobuf
+
+\BulletItem
+\textbf{Binary Instrumentation}
+\hfill
+\DatestampYM{2019}{5}
+\SubBulletItem
+Dynamic Binary Instrumentation for dynamic libraries during runtime of applications for providing persistency guarantees
+
+\BulletItem
+{\textbf{Hospital Management System}
+\hfill
+\DatestampYM{2017}{1}
+}
+\SubBulletItem
+Patient's condition monitoring scheduler
+\SubBulletItem
+Implemented Schedulers: Background Scheduling, Polling Server, Defferable Server, Sporadic Server
+
+\BulletItem
+{\textbf{Trax Game}
+\hfill
+\DatestampYM{2016}{4}
+}
+\SubBulletItem
+Two player game based on Verilog
+
+\BulletItem
+\href{https://github.com/arminvakil/NoC}
+{\textbf{NoC}}
+\hfill
+\DatestampYM{2016}{1}
+\SubBulletItem
+3D Mesh Network on Chip based on Verilog
+
+\BulletItem
+\href{https://github.com/Rmin1995/Judge}
+{\textbf{Judge}}
+\hfill
+\DatestampYM{2015}{3}
+\SubBulletItem
+Designing and implementing a judge system for evaluating codes
+
+\BulletItem
+{\textbf{Plants vs Zombies}
+\hfill
+\DatestampYM{2014}{7}
+}
+\SubBulletItem
+Based on Qt Creator
+
+\BulletItem
+{\textbf{Suduko}
+\hfill
+\DatestampYM{2014}{1}
+}
+\SubBulletItem
+Graphical Suduko game based on GTK
+
+\BulletItem
+{\textbf{Billiard}
+\hfill
+\DatestampYM{2014}{1}
+}
+\SubBulletItem
+Graphical Billiard game based on GTK
+
+
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+Persian: Native
+
+\GapNoBreak
+\BulletItem
+English: Fluent
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+%\section
+%{Hobbies}
+%{Hobbies}
+%{PDF:Hobbies}
+
+%Football,
+%climbing,
+%teaching.
+\end{body}
+
+%\label{LastPage}
+
+
+\end{document}
