@@ -41,11 +41,11 @@ breaklinks
 \title{\CVAuthor}
 \begin{subtitle}
 
-\faInstitution Computer Science \& Engineering Department, University Park, PA 16802
-\par
+%\faInstitution Computer Science \& Engineering Department, University of Michigan, Ann Arbor, MI
+%\par
 \Large{
 \href{https://arminvakil.github.io/}{\faGlobe}
-\href{mailto:arminvakil@psu.edu}{\faEnvelope}
+\href{mailto:arminvakil@gmail.com}{\faEnvelope}
 \href{https://www.linkedin.com/in/arminvakil}{\faLinkedinSquare}
 \href{https://github.com/arminvakil}{\faGithubSquare}
 \href{https://scholar.google.com/citations?user=OHnTCysAAAAJ&hl=en}{\faGraduationCap}}
@@ -65,15 +65,27 @@ breaklinks
 {Education}
 {PDF:Education}
 
+\textbf{University of Michigan},
+Ann Arbor, MI
+\hfill
+\DatestampYMD{2021}{08}{16} --
+Now
+\GapNoBreak
+\BulletItem
+PhD Student in
+	Computer Science \& Engineering Department
+\SubBulletItem
+Advisor: Prof. Manos Kapritsos
+
 \textbf{Pennsylvania State University},
 University Park, PA
 \hfill
 \DatestampYMD{2018}{08}{20} --
-Now
+\DatestampYMD{2021}{08}{14}
 \GapNoBreak
 \BulletItem
-Gradute Student in
-Computer Science \& Engineering Department
+PhD Student in
+	Computer Science \& Engineering Department (Transfer to UMich)
 \SubBulletItem
 Advisor: Prof. Mahmut Taylan Kandemir
 \SubBulletItem
@@ -111,13 +123,89 @@ GPA: 16.48/20 \textbf{(CE Major Coursework: 18.1/20)}
 {PDF:ResearchInterests}
 
 \BulletItem
-Virtual Memory
+Formal Verification
 \BulletItem
-Virtualized Systems
-\BulletItem
-Memory Systems
-\BulletItem
-Persistent Memory
+Distributed Systems
+
+
+\section
+{Work\newline
+Experience}
+{Work Experience}
+{PDF:WorkExperience}
+
+\BulletItem {Software Engineer Intern,
+\textbf{Google}
+\hfill
+\DatestampYMD{2021}{5}{10} --
+\DatestampYMD{2021}{08}{13}}
+
+\GapNoBreak
+\SubBulletItem
+Database team - Napa
+
+\BulletItem {Software Developer,
+\textbf{I-Cliqq}
+\hfill
+\DatestampYMD{2018}{1}{1} --
+\DatestampYMD{2018}{08}{14}}
+
+\GapNoBreak
+\SubBulletItem
+Designing Embroidery Software
+
+
+\BulletItem {Software Developer,
+\textbf{Viratech Sharif},
+Tehran, Iran
+\hfill
+\DatestampYMD{2015}{9}{15} --
+\DatestampYMD{2016}{9}{15} }
+
+\GapNoBreak
+\SubBulletItem
+Traffic Simulator (C++) - Network Simulator
+\SubBulletItem
+Add tunneling protocol between link, internet, and transport layer
+
+
+\section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\BulletItem{\textbf{Pennsylvania State University}
+\newline
+$\diamond$
+\textbf{Virtual Memory} -
+Applications with large memory footprint experience high number of page walks during their execution, leading to high performance degradation, especially in virtualized systems. In this project, we characterize the page walk memory accesses to identify the main overhead of page walk and propose different optimizations throughout the memory hierarchy to reduce this overhead.
+%Huge pages reduce the virtual-to-physical address translation by reducing the pressure on TLB and increasing the TLB reach.
+%However, allocating huge pages in presense of memory fragmentation has high overheads and I try to address this problem in my research.
+\newline
+$\diamond$
+\textbf{DRAM} -
+DRAM needs refresh operations because DRAM cells lose their content/charge over time. The overhead of these refreshes increases with larger DRAM devices. My research in this area reduces the memory refresh overhead in virtualized systems by leveraging the same-content values in DRAM.
+\newline
+$\diamond$
+\textbf{Persistent Memory} -
+Memory persistency models constrain the order of reaching persistent writes to persistent memory (PM). To enforce this order in x86 processors, programmers should use expensive \texttt{sfence} instructions. In this project, we propose an extension to the x86 memory persistency model based on two existing paths to PM, enabling implicit persist ordering without using \texttt{sfence} instructions.
+%Exploring persistent memory programming challenges and opportunities.
+}
+\newline
+\BulletItem{\textbf{Sharif University of Technology}
+\newline
+$\diamond$
+\textbf{Cache Replacement Policies} -
+My B.Sc. thesis project is on predicting the correlation of reuse-distance of each cache block and its remaining hit count. In my thesis, I proposed a cache replacement policy that leverages this correlation and reduces the miss rate of last-level caches.
+}
+
+
+
+
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
 
 \section
 {Publications}
@@ -162,106 +250,6 @@ Mohammad Bakhshalipour,
 Pejman Lotfi-Kamran,
 Hamid Sarbazi-Azad,
 ``Cache Replacement Policy Based on Expected Hit Count", \textit{IEEE Computer Architecture Letters}, \textbf{(CAL 2017)}
-
-
-
-\section
-{Research Experience}
-{Research Experience}
-{PDF:ResearchExperience}
-
-\BulletItem{\textbf{Pennsylvania State University}
-\newline
-$\diamond$
-\textbf{Virtual Memory} -
-Applications with large memory footprint experience high number of page walks during their execution, leading to high performance degradation, especially in virtualized systems. In this project, we characterize the page walk memory accesses to identify the main overhead of page walk and propose different optimizations throughout the memory hierarchy to reduce this overhead.
-%Huge pages reduce the virtual-to-physical address translation by reducing the pressure on TLB and increasing the TLB reach.
-%However, allocating huge pages in presense of memory fragmentation has high overheads and I try to address this problem in my research.
-\newline
-$\diamond$
-\textbf{DRAM} -
-DRAM needs refresh operations because DRAM cells lose their content/charge over time. The overhead of these refreshes increases with larger DRAM devices. My research in this area reduces the memory refresh overhead in virtualized systems by leveraging the same-content values in DRAM.
-\newline
-$\diamond$
-\textbf{Persistent Memory} -
-Memory persistency models constrain the order of reaching persistent writes to persistent memory (PM). To enforce this order in x86 processors, programmers should use expensive \texttt{sfence} instructions. In this project, we propose an extension to the x86 memory persistency model based on two existing paths to PM, enabling implicit persist ordering without using \texttt{sfence} instructions.
-%Exploring persistent memory programming challenges and opportunities.
-}
-\newline
-\BulletItem{\textbf{Sharif University of Technology}
-\newline
-$\diamond$
-\textbf{Cache Replacement Policies} -
-My B.Sc. thesis project is on predicting the correlation of reuse-distance of each cache block and its remaining hit count. In my thesis, I proposed a cache replacement policy that leverages this correlation and reduces the miss rate of last-level caches.
-}
-
-
-\section
-{Teaching Experience}
-{Teaching Experience}
-{PDF:TeachingExperience}
-
-
-\BulletItem {Teaching Assistant at Pennsylvania State University}
-
-\SubBulletItem {Introduction to Computer Architecture (CMPEN 431) \hfill{Spring 2020, Fall 2020}}
-\SubBulletItem {Computer Organization and Design (CMPEN 331) \hfill{Fall 2018, 2019, Spring 2019}}
-
-\BulletItem Teaching Assistant at Sharif University of Technology
-\SubBulletItem {Computer Architecture
-\hfill
-Fall 2016, 2017}
-\SubBulletItem {Digital System Design \hfill {Spring \& Fall 2017}}
-
-\SubBulletItem {Digital Design \hfill{Spring 2017}}
-\SubBulletItem {Advanced Logic Design \hfill{Fall 2016}}
-\SubBulletItem {Discrete Structures \hfill {Spring 2016}}
-\SubBulletItem {Advanced Programming \hfill{Fall 2014, 2015}}
-\SubBulletItem {Fundamental Of Programming \hfill{Spring \& Fall 2014}}
-
-
-\BulletItem{High School Teacher
-\hfill
-\DatestampY{2013} --
-\DatestampY{2018}
-\SubBulletItem {Teaching Combinatorics, Graph Theory, Algorithm, and C++ Programming}
-}
-
-\section
-{Work\newline
-Experience}
-{Work Experience}
-{PDF:WorkExperience}
-
-\BulletItem {Software Developer,
-\textbf{I-Cliqq}
-\hfill
-\DatestampYMD{2018}{1}{1} --
-\DatestampYMD{2018}{08}{14}}
-
-\GapNoBreak
-\SubBulletItem
-Designing Embroidery Software
-
-
-\BulletItem {Software Developer,
-\textbf{Viratech Sharif},
-Tehran, Iran
-\hfill
-\DatestampYMD{2015}{9}{15} --
-\DatestampYMD{2016}{9}{15} }
-
-\GapNoBreak
-\SubBulletItem
-Traffic Simulator (C++) - Network Simulator
-\SubBulletItem
-Add tunneling protocol between link, internet, and transport layer
-
-
-%%%%%%%%%%%%
-%% SKILLS %%
-%%%%%%%%%%%%
-
 
 \section
 {Notable Projects}
@@ -390,41 +378,6 @@ Graphical Suduko game based on GTK
 \SubBulletItem
 Graphical Billiard game based on GTK
 
-
-
-
-\section
-{Honors\newline
-And\newline
-Awards}
-{Honors\newline
-And\newline
-Awards}
-{PDF:HonorsAndAwards}
-
-\BulletItem
-Qualified for 2nd Cache Replacement Championship (CRC-2)
-\SubBulletItem
-Cache Replacement Policy Based on Expected Hit Count
-\hfill
-\DatestampYM{2017}{06}
-
-%\BulletItem
-%Undergraduate grant from the Iranian National Elites Foundation
-%\hfill
-%\DatestampYM{2012}{09} -- \DatestampYM{2015}{01}
-
-\BulletItem
-\textbf{Silver Medal} in 22nd Iran National Olympiad in Informatics(INOI)
-\hfill
-\DatestampYM{2012}{09}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% OTHER WORK EXPERIENCE %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section
 {Community Service}
 {Community Service}
@@ -458,6 +411,73 @@ Founded a hardware contest for undergraduate freshman and sophomore
 \BulletItem {DSM: A Case for Hardware-Assisted Merging of DRAM Rows with Same Content}
 \SubBulletItem {\href{https://www.youtube.com/watch?v=85qSqmwk0ss}{ACM SIGMETRICS} \hfill{Jun 2020}}
 
+\section
+{Honors\newline
+And\newline
+Awards}
+{Honors\newline
+And\newline
+Awards}
+{PDF:HonorsAndAwards}
+
+\BulletItem
+Qualified for 2nd Cache Replacement Championship (CRC-2)
+\SubBulletItem
+Cache Replacement Policy Based on Expected Hit Count
+\hfill
+\DatestampYM{2017}{06}
+
+%\BulletItem
+%Undergraduate grant from the Iranian National Elites Foundation
+%\hfill
+%\DatestampYM{2012}{09} -- \DatestampYM{2015}{01}
+
+\BulletItem
+\textbf{Silver Medal} in 22nd Iran National Olympiad in Informatics(INOI)
+\hfill
+\DatestampYM{2012}{09}
+
+
+
+\section
+{Teaching Experience}
+{Teaching Experience}
+{PDF:TeachingExperience}
+
+
+\BulletItem {Teaching Assistant at Pennsylvania State University}
+
+\SubBulletItem {Introduction to Computer Architecture (CMPEN 431) \hfill{Spring 2020, Fall 2020}}
+\SubBulletItem {Computer Organization and Design (CMPEN 331) \hfill{Fall 2018, 2019, Spring 2019}}
+
+\BulletItem Teaching Assistant at Sharif University of Technology
+\SubBulletItem {Computer Architecture
+\hfill
+Fall 2016, 2017}
+\SubBulletItem {Digital System Design \hfill {Spring \& Fall 2017}}
+
+\SubBulletItem {Digital Design \hfill{Spring 2017}}
+\SubBulletItem {Advanced Logic Design \hfill{Fall 2016}}
+\SubBulletItem {Discrete Structures \hfill {Spring 2016}}
+\SubBulletItem {Advanced Programming \hfill{Fall 2014, 2015}}
+\SubBulletItem {Fundamental Of Programming \hfill{Spring \& Fall 2014}}
+
+
+\BulletItem{High School Teacher
+\hfill
+\DatestampY{2013} --
+\DatestampY{2018}
+\SubBulletItem {Teaching Combinatorics, Graph Theory, Algorithm, and C++ Programming}
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% OTHER WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \section
 {Skills}
@@ -467,13 +487,16 @@ Founded a hardware contest for undergraduate freshman and sophomore
 \BulletItem
 Programming Languages:
 C/C++,
+C\#,
 Python,
+Dafny,
+Boogie,
+SQL,
 CUDA/OpenMP,
 Verilog,
 R,
 Shell,
-Assembly,
-Dafny
+Assembly
 
 \BulletItem
 Simulators:
@@ -488,14 +511,14 @@ ChampSim
 
 \BulletItem
 Tools \& Frameworks:
+Google Protobuf,
+gRPC,
+Armada,
 Qemu,
 Pin,
 DynamoRIO,
 LLVM,
-ANTLR,
-Google Protobuf,
-gRPC,
-Qt
+ANTLR
 
 \BulletItem
 Operating Systems:
@@ -508,21 +531,19 @@ Type Setting:
 Microsoft Office
 
 
+
+
+
+
+
+
+
+
+
 %%%%%%%%%%%%%%%
 %% LANGUAGES %%
 %%%%%%%%%%%%%%%
 
-\section
-{Languages}
-{Languages}
-{PDF:Languages}
-
-\BulletItem
-Persian: Native
-
-\GapNoBreak
-\BulletItem
-English: Fluent
 
 %%%%%%%%%%%%%%%
 %% INTERESTS %%
